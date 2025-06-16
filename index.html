@@ -1,17 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>TRONSCAN | Transaction Info</title>
-  </head>
-  <body style="font-family:sans-serif;padding:30px;background:#fff;color:#000">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TRONSCAN | Transaction Info</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 30px;
+      color: #1f1f1f;
+    }
+    .container {
+      max-width: 700px;
+      background: #fff;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    }
+    .label {
+      font-weight: 600;
+      display: inline-block;
+      min-width: 120px;
+      color: #555;
+    }
+    .value {
+      margin-bottom: 15px;
+      word-break: break-all;
+    }
+    .status-success {
+      color: #2ecc71;
+      font-weight: bold;
+    }
+    .txhash {
+      font-family: monospace;
+      color: #333;
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
     <h2>Transaction Details</h2>
-    <p><b>From:</b> TGTxhByjikJ5PbsMukyg86bHm4nCWo6xLA</p>
-    <p><b>To:</b> TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf</p>
-    <p><b>Amount:</b> +8,504,956.13 USDT</p>
-    <p><b>Status:</b> <span style="color:green">SUCCESS</span></p>
-    <p><b>Time:</b> 2025-06-16 16:52:57 (UTC)</p>
-    <p><b>Block:</b> 792994581</p>
-    <p><b>TxHash:</b> 0x8f9cdee321...aa57</p>
-  </body>
+    <div class="value"><span class="label">From:</span> TGTxhByjikJ5PbsMukyg86bHm4nCWo6xLA</div>
+    <div class="value"><span class="label">To:</span> TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf</div>
+    <div class="value"><span class="label">Amount:</span> +8,504,956.13 USDT</div>
+    <div class="value"><span class="label">Status:</span> <span class="status-success">SUCCESS</span></div>
+    <div class="value"><span class="label">Time:</span> 2025-06-16 16:52:57 (UTC)</div>
+    <div class="value"><span class="label">Block:</span> 792994581</div>
+    <div class="value"><span class="label">TxHash:</span> <span class="txhash">0x8f9cdee32188de7f2c...aa57</span></div>
+  </div>
+</body>
 </html>
+    
