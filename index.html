@@ -11,12 +11,17 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+    }
+
+    /* CENTER CHUẨN */
+    .wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: start;
+      min-height: 100vh;
     }
 
-    /* THANH TÌM KIẾM */
     .search-bar {
       width: 90%;
       max-width: 860px;
@@ -44,7 +49,6 @@
       width: 100%;
     }
 
-    /* KHUNG NỘI DUNG */
     .container {
       width: 90%;
       max-width: 860px;
@@ -54,6 +58,7 @@
       border: 1px solid #2a2e35;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       margin-bottom: 50px;
+      margin: auto;
     }
 
     h2 {
@@ -71,20 +76,20 @@
   </style>
 </head>
 <body>
+  <div class="wrapper">
+    <!-- THANH TÌM KIẾM -->
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Search by ID, Account, User, Block, Hash, Wallet..." />
+    </div>
 
-  <!-- THANH TÌM KIẾM -->
-  <div class="search-bar">
-    <span class="search-icon">🔍</span>
-    <input type="text" placeholder="Search by ID, Account, User, Block, Hash, Wallet..." />
+    <!-- KHUNG NỘI DUNG -->
+    <div class="container">
+      <h2>🎯 ĐÃ CĂN GIỮA HOÀN TOÀN — KHÔNG LỆCH</h2>
+      <p>✅ Cả thanh tìm kiếm và khung nội dung nằm ngay giữa</p>
+      <p>✅ Không lệch trái hay phải trên mọi thiết bị</p>
+      <p>✅ Sẵn sàng gắn tiếp heading + status + logo</p>
+    </div>
   </div>
-
-  <!-- KHUNG NỘI DUNG -->
-  <div class="container">
-    <h2>🎯 Bản Responsive chuẩn full PC + DT</h2>
-    <p>✅ Tự động co khung khi mở điện thoại</p>
-    <p>✅ Không còn lệch, nhìn mượt ở mọi thiết bị</p>
-    <p>✅ Chuẩn Trọc Mu yêu cầu!</p>
-  </div>
-
 </body>
 </html>
