@@ -1,60 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TRONSCAN | Transaction Info</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TRON FakeScan</title>
   <style>
     body {
-      background-color: #f9f9f9;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 30px;
-      color: #1f1f1f;
+      background-color: #12161c;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
+
+    .search-bar {
+      width: 100%;
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: #1e2329;
+      border: 1px solid #31353b;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+    }
+
+    .search-bar .search-icon {
+      font-size: 18px;
+      color: #ccc;
+      margin-right: 10px;
+    }
+
+    .search-bar input {
+      background: none;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 15px;
+      width: 100%;
+    }
+
     .container {
-      max-width: 700px;
-      background: #fff;
-      margin: auto;
-      padding: 30px;
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #1e2329;
+      padding: 25px;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+      border: 1px solid #2a2e35;
     }
+
+    h2 {
+      color: #f2c94c;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
     .label {
-      font-weight: 600;
-      display: inline-block;
-      min-width: 120px;
-      color: #555;
-    }
-    .value {
-      margin-bottom: 15px;
-      word-break: break-all;
-    }
-    .status-success {
-      color: #2ecc71;
+      color: #bbb;
       font-weight: bold;
     }
-    .txhash {
-      font-family: monospace;
-      color: #333;
+
+    .value {
+      color: #fff;
+      margin-bottom: 10px;
     }
-    h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-      margin-bottom: 25px;
-      color: #333;
+
+    .confirmed {
+      background-color: #1abc9c;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
+  <!-- THANH TÌM KIẾM -->
+  <div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input type="text" placeholder="Search by ID, Account, User, Block, Hash, Wallet..." />
+  </div>
+
+  <!-- KHUNG NỘI DUNG -->
   <div class="container">
-    <h2>Transaction Details</h2>
-    <div class="value"><span class="label">From:</span> TGTxhByjikJ5PbsMukyg86bHm4nCWo6xLA</div>
-    <div class="value"><span class="label">To:</span> TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf</div>
-    <div class="value"><span class="label">Amount:</span> +8,504,956.13 USDT</div>
-    <div class="value"><span class="label">Status:</span> <span class="status-success">SUCCESS</span></div>
-    <div class="value"><span class="label">Time:</span> 2025-06-16 16:52:57 (UTC)</div>
-    <div class="value"><span class="label">Block:</span> 792994581</div>
-    <div class="value"><span class="label">TxHash:</span> <span class="txhash">0x8f9cdee32188de7f2c...aa57</span></div>
+    <h2>Transaction Info</h2>
+
+    <div class="confirmed">CONFIRMED</div>
+
+    <div>
+      <div class="label">From:</div>
+      <div class="value">TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf</div>
+
+      <div class="label">To:</div>
+      <div class="value">TGTxhByjikJ5PbsMukyg86bHm4nCWo6xLA</div>
+
+      <div class="label">Memo:</div>
+      <div class="value">Binance hot wallet</div>
+
+      <div class="label">Completed:</div>
+      <div class="value">2025-06-16 16:52:57 (UTC)</div>
+
+      <div class="label">Amount:</div>
+      <div class="value">+8.504.956,13 USDT</div>
+
+      <div class="label">Contract address:</div>
+      <div class="value">TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</div>
+
+      <div class="label">Block:</div>
+      <div class="value">73145259 - 2,137 blocks</div>
+
+      <div class="label">Confirmed by:</div>
+      <div class="value">at least 19 SRs have confirmed this transaction success</div>
+
+      <div class="label">USDT holdings:</div>
+      <div class="value">-8.504.956,13</div>
+
+      <div class="label">Hold TRX:</div>
+      <div class="value">0</div>
+
+      <div class="label">Bandwidth:</div>
+      <div class="value">27/600</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Payment link request linked by <strong>Dashboarduserbinanceprivate.io</strong> - user f109 !
   </div>
 </body>
 </html>
-    
