@@ -3,93 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TRON FakeScan</title>
+  <title>Fake TRC20 TX</title>
   <style>
     body {
-      background-color: #12161c;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-    }
-
-    /* CENTER CHUẨN */
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: start;
-      min-height: 100vh;
-    }
-
-    .search-bar {
-      width: 90%;
-      max-width: 860px;
-      margin: 20px auto 10px;
-      background-color: #1e2329;
-      border: 1px solid #31353b;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      padding: 10px 15px;
-    }
-
-    .search-bar .search-icon {
-      font-size: 18px;
-      color: #ccc;
-      margin-right: 10px;
-    }
-
-    .search-bar input {
-      background: none;
-      border: none;
-      outline: none;
+      padding: 20px;
+      background-color: #0d1a26; /* Nền xanh đen kiểu Binance */
+      font-family: Arial, sans-serif;
       color: #fff;
-      font-size: 15px;
+    }
+    .search-bar {
       width: 100%;
+      margin-bottom: 30px;
     }
-
-    .container {
-      width: 90%;
-      max-width: 860px;
-      background-color: #1e2329;
-      padding: 30px 35px;
-      border-radius: 10px;
-      border: 1px solid #2a2e35;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-      margin-bottom: 50px;
+    .search-bar input {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      background-color: #1b2b3a;
+      color: white;
+    }
+    .tx-box {
+      max-width: 800px;
       margin: auto;
+      background-color: #e7e0c4; /* màu xám vàng nhẹ như yêu cầu */
+      color: #000;
+      padding: 25px;
+      border-radius: 10px;
+      line-height: 1.6;
+      font-size: 15px;
     }
-
-    h2 {
-      color: #f2c94c;
+    .confirmed {
+      display: inline-block;
+      background-color: #b6eac5; /* nền xanh lá nhẹ */
+      color: #1b5e20;
       font-weight: bold;
-      margin-bottom: 20px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      margin-top: 10px;
     }
-
     .footer {
-      text-align: center;
-      color: #888;
-      font-size: 13px;
       margin-top: 40px;
+      text-align: center;
+      font-size: 13px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <!-- THANH TÌM KIẾM -->
-    <div class="search-bar">
-      <span class="search-icon">🔍</span>
-      <input type="text" placeholder="Search by ID, Account, User, Block, Hash, Wallet..." />
-    </div>
 
-    <!-- KHUNG NỘI DUNG -->
-    <div class="container">
-      <h2>🎯 ĐÃ CĂN GIỮA HOÀN TOÀN — KHÔNG LỆCH</h2>
-      <p>✅ Cả thanh tìm kiếm và khung nội dung nằm ngay giữa</p>
-      <p>✅ Không lệch trái hay phải trên mọi thiết bị</p>
-      <p>✅ Sẵn sàng gắn tiếp heading + status + logo</p>
-    </div>
+  <!-- Thanh tìm kiếm -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search by ID, account, user, block, hash... 🔍">
   </div>
+
+  <!-- Khung nội dung -->
+  <div class="tx-box">
+    TGTxhByjikJ5PbsMukyg86bHm4nCWo6xLA<br>
+    Transfer TRC20 tokens.<br>
+    Completed: 2025-06-16 16:52:57 (UTC)<br>
+    Fom: TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf<br>
+    Change : Binance hot_8<br>
+    Arrive : TGTxhByjikJ5PbsMukyg86bHm4nCWo6xLA<br>
+    Quantity: +8.504.956 ($8.504.956,13) USDT<br>
+    Contract address:<br>
+    TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t<br>
+    #Token: Tether USD<br>
+    Block: 73145259 - 2,137 blocks at least 19 SRs have confirmed this transaction success<br>
+    <div class="confirmed">✅ Confirmed</div><br>
+    <br>
+    # https://tronscan.org/#/transaction/8dda9856e9e03a89756c16fc30889a982dd7e46669efe629c2f74990928e2e59
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Payment link request linked by Dashboarduserbinanceprivate.io - user f109 !
+  </div>
+
 </body>
 </html>
